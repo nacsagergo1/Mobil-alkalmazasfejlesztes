@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "966491782502",
+    "project_id": "androidfocibajnoksag",
+    "storage_bucket": "androidfocibajnoksag.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966491782502:android:09cf189180bb3b8f215ca7",
+        "android_client_info": {
+          "package_name": "com.example.focibajnoksag"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOc7jV0gM3LR9HpJjrJYaaMOtqQP4IsDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
