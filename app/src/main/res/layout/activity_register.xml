@@ -96,7 +96,8 @@
             android:layout_height="48dp"
             android:backgroundTint="#3F51B5"
             android:onClick="register"
-            android:text="@string/registration" />
+            android:text="@string/registration"
+            android:textColor="@color/white" />
 
         <Button
             android:layout_width="160dp"
@@ -104,7 +105,8 @@
             android:layout_marginStart="40dp"
             android:backgroundTint="#3F51B5"
             android:onClick="cancel"
-            android:text="@string/cancel" />
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
     </LinearLayout>
 
 </RelativeLayout>
