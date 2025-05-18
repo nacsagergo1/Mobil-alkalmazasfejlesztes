@@ -13,6 +13,7 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
+        multiDexEnabled = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -42,6 +43,9 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
+    implementation("com.google.firebase:firebase-firestore:21.4.3")
     implementation("com.google.firebase:firebase-auth")
+    implementation("com.android.support:multidex:1.0.3")
     implementation("com.google.android.gms:play-services-auth:19.0.0")
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
 }

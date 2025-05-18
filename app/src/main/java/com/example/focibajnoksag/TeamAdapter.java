@@ -36,7 +36,6 @@ public class TeamAdapter extends BaseAdapter {
         return position;
     }
 
-
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LinearLayout container;
@@ -68,10 +67,17 @@ public class TeamAdapter extends BaseAdapter {
             container = (LinearLayout) convertView;
         }
 
+        // Beállítjuk az aktuális adatokat
         ImageView imageView = (ImageView) container.getChildAt(0);
         TextView textView = (TextView) container.getChildAt(1);
         imageView.setImageResource(teamLogos[position]);
         textView.setText(teamNames[position]);
+
+        // Ez a kulcs: mindig újraállítjuk a helyes position alapján!
+        final String teamName = teamNames[position];
+        container.setOnClickListener(v -> {
+            ((HomeActivity) context).showPointDialog(teamName);
+        });
 
         container.clearAnimation();
         container.startAnimation(AnimationUtils.loadAnimation(context, R.anim.homeactivityanimation));
